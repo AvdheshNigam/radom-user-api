@@ -168,15 +168,6 @@ header h1 a img {
   list-style-type: none;
   vertical-align: middle;
 }
-.custom-navbar li > span {
-  display: none;
-  font-size: 16px;
-  justify-content: flex-end;
-  color: white;
-  padding: 15px;
-  margin-right: 32px;
-  cursor: pointer;
-}
 .custom-navbar li a {
   display: block;
   font-size: 17px;
@@ -250,11 +241,8 @@ header h1 a img {
   .custom-navbar li {
     display: block;
   }
-  .custom-navbar li > span {
-    display: flex;
-  }
   .custom-navbar li a {
-    text-align: center;
+    text-align: left;
     border: 1px solid #637afe;
   }
 
