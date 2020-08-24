@@ -315,6 +315,9 @@ footer p {
   overflow: hidden;
   transition: all 1s ease;
 }
+.modal.open {
+  display: block;
+}
 .modal .modal-body {
   position: absolute;
   left: 50%;
