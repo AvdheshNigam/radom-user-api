@@ -92,13 +92,14 @@ header {
     position: fixed;
     z-index: 2;
     top:70px;
-    right: 0;
+    right:-100%;
     width: 100%;
     width: 300px;
     background-color:$base-color;
     transition: all 1s ease;
     &.open {
       opacity: 1;
+      right: 0;
     }
     li {
       display: block;

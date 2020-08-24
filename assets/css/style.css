@@ -229,7 +229,7 @@ header h1 a img {
     position: fixed;
     z-index: 2;
     top: 70px;
-    right: 0;
+    right: -100%;
     width: 100%;
     width: 300px;
     background-color: #304ffe;
@@ -237,6 +237,7 @@ header h1 a img {
   }
   .custom-navbar.open {
     opacity: 1;
+    right: 0;
   }
   .custom-navbar li {
     display: block;
