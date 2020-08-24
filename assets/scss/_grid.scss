@@ -1,0 +1,57 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+  background-color: red;
+}
+
+.flexGrid {
+  display: flex;
+  margin: auto 0 0;
+}
+
+.set{
+  height: 100vh;
+}
+.col {
+  background: transparent;
+}
+
+// Grid Layout
+.container-fluid {
+width: 100%;
+margin:0 auto;
+padding-left: 0px;
+padding-right: 0px;
+.row {
+  display: flex;
+  flex-wrap:wrap;
+  width: auto;
+  justify-content: center;
+  align-self: center;
+  box-sizing: border-box;
+  margin-left: 0px;
+  margin-right: 0px;
+  .col{
+    transition: all 1s ease-out;
+    padding: 15px 15px 15px 15px;
+    height: 100%;
+    margin-bottom: 35px;
+    @media all and(max-width: 600px) {
+      flex:  1 1 100%;
+      max-width: 100%;
+    }
+    @media all and(min-width: 600px) {
+      flex:  1 1 50%;
+      max-width: 50%;
+    }
+    @media all and(min-width: 768px) {
+      flex:  1 1 33.333%;
+      max-width: 33.333%;
+    }
+    @media all and(min-width: 991px) {
+      flex:  1 1 25%;
+      max-width: 25%;
+    }
+  }
+}
+}
