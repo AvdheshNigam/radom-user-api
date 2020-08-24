@@ -66,7 +66,7 @@ body {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -271,8 +271,8 @@ header h1 a img {
     right: 0;
     width: 200px;
     background-color: #304ffe;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(400px at 90% -20%);
+    clip-path: circle(300px at 90% 0);
+    -webkit-clip-path: circle(300px at 90% 0);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
@@ -284,9 +284,6 @@ header h1 a img {
     right: 0;
     width: 200px;
     background-color: #304ffe;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(1000px at 90% -20%);
-    transition: all 1s ease-out;
   }
   .custom-navbar li {
     display: block;

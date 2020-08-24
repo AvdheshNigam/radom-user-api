@@ -135,8 +135,8 @@ header {
     right:0;
     width: 200px;
     background-color:$base-color;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(400px at 90% -20%);
+    clip-path: circle(300px at 90% 0);
+    -webkit-clip-path: circle(300px at 90% 0);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     &.open {
@@ -147,9 +147,7 @@ header {
       right:0;
       width: 200px;
       background-color:$base-color;
-      clip-path: circle(100px at 90% -20%);
-      -webkit-clip-path: circle(1000px at 90% -20%);
-      transition: all 1s ease-out;
+      
     }
     li {
       display: block;
