@@ -1,7 +1,7 @@
 
 ## How to run
 
-##Install npm
+## Install npm
 
 ### `npm install -g sass`
 
