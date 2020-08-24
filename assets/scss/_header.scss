@@ -99,21 +99,15 @@ header {
     display: none;
     position: fixed;
     z-index: 2;
-    top:12px;
+    top:70px;
     right: 0;
     width: 100%;
-    width: 200px;
+    width: 300px;
     background-color:$base-color;
-    // -webkit-clip-path: circle(100px at 90% 0);
-    //         clip-path: circle(100px at 90% 0);
-            transition: all 1s ease;
+    transition: all 1s ease;
     &.open {
       display: block;
-      width: 200px;
-      background-color:$base-color;
-      // -webkit-clip-path: circle(500px at 90% 0);
-      //       clip-path: circle(500px at 90% 0);
-            transition: all 1s ease;
+      transition: all 1s ease;
     }
     li {
       display: block;

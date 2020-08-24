@@ -1,20 +1,15 @@
 const navbar = document.querySelector('.js-custom-navbar');
 const menuIcon = document.querySelector('.js-menu-icon');
-const menuClose = document.querySelector('.js-menu-close');
+const menuIconClose = document.querySelector('.js-menu-icon span');
 const modalEle = document.querySelector(".modal");
 const modalImage = document.querySelector(".js-modal-image");
 modalClose = document.querySelector(".js-close");
 
 menuIcon.addEventListener('click', e => {
   e.preventDefault();
-  navbar.classList.add("open");
+  navbar.classList.toggle("open");
+  menuIconClose.classList.toggle("fa-times");
 });
-
-menuClose.addEventListener('click', e => {
-  e.preventDefault();
-  navbar.classList.remove("open");
-});
-
 
 Array.from(document.querySelectorAll(".js-img-thumb")).forEach(item => {
   item.addEventListener("click", e => {
