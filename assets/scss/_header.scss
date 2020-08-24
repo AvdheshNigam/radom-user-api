@@ -83,35 +83,6 @@ header {
       margin: 0 auto;
     }
   }
-  .custom-navbar {
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    top:12px;
-    right:0;
-    width: 200px;
-    background-color:$base-color;
-    &.open {
-      opacity: 1;
-    }
-    li {
-      display: block;
-      >span{
-        display: flex;
-      }
-      a{
-        text-align: left;
-      }
-    }
-  }
-  .menu-icon {
-    display: block;
-    margin: 30px 15px;
-    span{
-      color: lighten( $base-color, 100% );
-      font-size: $base-font-size;
-    }
-  }
 }
 
 @media (max-width: 480px) {
@@ -121,7 +92,6 @@ header {
     }
   }
 }
-
 
 @media (max-width: 991px) {
   header {
