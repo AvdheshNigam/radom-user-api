@@ -234,25 +234,20 @@ header h1 a img {
 
   .custom-navbar {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 12px;
     right: 0;
+    width: 100%;
     width: 200px;
     background-color: #304ffe;
-    clip-path: circle(300px at 90% 0);
-    -webkit-clip-path: circle(300px at 90% 0);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    transition: all 1s ease;
   }
   .custom-navbar.open {
     display: block;
-    position: absolute;
-    z-index: 2;
-    top: 12px;
-    right: 0;
     width: 200px;
     background-color: #304ffe;
+    transition: all 1s ease;
   }
   .custom-navbar li {
     display: block;
@@ -261,7 +256,8 @@ header h1 a img {
     display: flex;
   }
   .custom-navbar li a {
-    text-align: left;
+    text-align: center;
+    border: 1px solid #637afe;
   }
 
   .menu-icon {

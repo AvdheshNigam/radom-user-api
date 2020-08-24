@@ -54,8 +54,6 @@ header {
   }
 }
 
-
-
 .menu-icon  {
   display: none;
   background-color: transparent;
@@ -99,25 +97,23 @@ header {
   }
   .custom-navbar {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top:12px;
-    right:0;
+    right: 0;
+    width: 100%;
     width: 200px;
     background-color:$base-color;
-    clip-path: circle(300px at 90% 0);
-    -webkit-clip-path: circle(300px at 90% 0);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    // -webkit-clip-path: circle(100px at 90% 0);
+    //         clip-path: circle(100px at 90% 0);
+            transition: all 1s ease;
     &.open {
       display: block;
-      position: absolute;
-      z-index: 2;
-      top:12px;
-      right:0;
       width: 200px;
       background-color:$base-color;
-      
+      // -webkit-clip-path: circle(500px at 90% 0);
+      //       clip-path: circle(500px at 90% 0);
+            transition: all 1s ease;
     }
     li {
       display: block;
@@ -125,7 +121,8 @@ header {
         display: flex;
       }
       a{
-        text-align: left;
+        text-align: center;
+        border: 1px solid lighten( $base-color, 10% );
       }
     }
   }
