@@ -87,7 +87,7 @@ header {
     position: relative;
   }
   .custom-navbar {
-    display: none;
+    opacity: 0;
     position: fixed;
     z-index: 2;
     top:70px;
@@ -97,8 +97,7 @@ header {
     background-color:$base-color;
     transition: all 1s ease;
     &.open {
-      display: block;
-      transition: all 1s ease;
+      opacity: 1;
     }
     li {
       display: block;

@@ -224,7 +224,7 @@ header h1 a img {
   }
 
   .custom-navbar {
-    display: none;
+    opacity: 0;
     position: fixed;
     z-index: 2;
     top: 70px;
@@ -235,8 +235,7 @@ header h1 a img {
     transition: all 1s ease;
   }
   .custom-navbar.open {
-    display: block;
-    transition: all 1s ease;
+    opacity: 1;
   }
   .custom-navbar li {
     display: block;
