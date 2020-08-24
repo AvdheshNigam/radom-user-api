@@ -1,3 +1,29 @@
+.ripple-wave {
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+.ripple-wave:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform-style: flat;
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.ripple-wave:focus, .ripple-wave:hover {
+  background: #fb512e;
+}
+.ripple-wave:active:after {
+  width: 200px;
+  height: 200px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +68,6 @@ body {
 .container {
   max-width: 80%;
   margin: auto;
-  background-color: red;
 }
 
 .flexGrid {
@@ -247,7 +272,7 @@ header h1 a img {
     width: 200px;
     background-color: #304ffe;
     clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(400px at 90% -20%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
