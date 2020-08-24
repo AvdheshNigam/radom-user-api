@@ -45,12 +45,13 @@ header {
   }
 }
 
-.menu-icon  {
+.menu-icon {
   display: none;
   background-color: transparent;
   border:1px solid transparent;
   text-align: center;
-  padding: 10px 15px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   @include radius(5px);
   &:hover{
@@ -61,7 +62,7 @@ header {
   }
   span{
     color: lighten( $base-color, 100% );
-    font-size: $base-font-size;
+    font-size: $base-font-size + 4;
   }
 }
 
@@ -109,10 +110,5 @@ header {
   }
   .menu-icon {
     display: block;
-    margin: 30px 15px;
-    span{
-      color: lighten( $base-color, 100% );
-      font-size: $base-font-size;
-    }
   }
 }
