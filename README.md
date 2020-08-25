@@ -1,6 +1,6 @@
-
-# HTML RESPONSIVE LAYOUT
 # Flexbox Header and footer is fixed and body part is scrollabe.
+# HTML RESPONSIVE LAYOUT
+
 
 ## Nabar is responsive and Mobile first.
 
