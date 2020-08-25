@@ -1,14 +1,12 @@
 # Flexbox Header and footer is fixed and body part is scrollabe.
-# HTML RESPONSIVE LAYOUT
+# HTML RESPONSIVE LAYOUT USING FLEXBOX WITHOUT FROMEWORK
 
 
 ## Nabar is responsive and Mobile first.
-
 ## `Grid is responsive and fluid desgin`
-
 ## `HTML5, SCSS and Javascript`
 
-## `install npm`
+### `install npm`
 
 ### `npm install -g sass`
 
