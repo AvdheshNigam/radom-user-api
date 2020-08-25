@@ -1,10 +1,10 @@
 
-# HTML RESPONSIVE TASK
-## Flexbox Header and footer is fixed and body part is scrollabe.
+# HTML RESPONSIVE LAYOUT
+# Flexbox Header and footer is fixed and body part is scrollabe.
 
 ## Nabar is responsive and Mobile first.
 
-# `Grid is responsive and fluid desgin`
+## `Grid is responsive and fluid desgin`
 
 ## `HTML5, SCSS and Javascript`
 
