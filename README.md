@@ -1,4 +1,4 @@
-# Flexbox Header and footer is fixed and body part is scrollabe.
+# Flexbox Header and footer is fixed and body part is scrollable.
 ## HTML RESPONSIVE LAYOUT USING FLEXBOX WITHOUT FROMEWORK
 
 
