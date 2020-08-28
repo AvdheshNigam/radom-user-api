@@ -1,4 +1,4 @@
-# Flexbox Header and footer is fixed and body part is scrollable.
+# Page Layout - Header & Footer are Fixed but body part is scrollable.
 ## HTML RESPONSIVE LAYOUT USING FLEXBOX WITHOUT FROMEWORK
 
 
