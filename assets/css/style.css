@@ -91,6 +91,10 @@ a:hover {
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
   padding: 20px;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 .card__image {
   display: block;

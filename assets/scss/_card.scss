@@ -4,7 +4,11 @@
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
   padding: $default-spacing;
   text-align: center;
-  &__image{
+  transition: all .5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  &__image {
     display: block;
     img{
       border-radius: 50%;
@@ -36,7 +40,7 @@
         color: darken($card-footer-color, 100%);
         background-color: lighten($card-footer-background, 20%);
       }
-      &:focus{
+      &:focus {
         outline: none;
       }
     }
