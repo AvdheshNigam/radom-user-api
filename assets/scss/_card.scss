@@ -16,6 +16,7 @@
       font-size: 28px;
       span{
         display: block;
+        font-size: 21px;
       }
     }
   }
@@ -30,6 +31,11 @@
       border-color:transparent;
       border-radius: 3px;
       cursor: pointer;
+      &:hover{
+        font-weight: 500;
+        color: darken($card-footer-color, 100%);
+        background-color: lighten($card-footer-background, 20%);
+      }
       &:focus{
         outline: none;
       }

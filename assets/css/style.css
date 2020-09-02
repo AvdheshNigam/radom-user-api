@@ -106,6 +106,7 @@ a:hover {
 }
 .card__title h2 span {
   display: block;
+  font-size: 21px;
 }
 .card__footer {
   padding: 7px 0px;
@@ -119,6 +120,11 @@ a:hover {
   border-color: transparent;
   border-radius: 3px;
   cursor: pointer;
+}
+.card__footer button:hover {
+  font-weight: 500;
+  color: black;
+  background-color: #ffa149;
 }
 .card__footer button:focus {
   outline: none;
