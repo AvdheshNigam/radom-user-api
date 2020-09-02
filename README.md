@@ -1,10 +1,6 @@
-# Page Layout - Header & Footer are Fixed but body part is scrollable.
-## HTML RESPONSIVE LAYOUT USING FLEXBOX WITHOUT FROMEWORK
 
+## RANDOM USER DISPLAY
 
-## Nabar is responsive and Mobile first.
-## `Grid is responsive and fluid design`
-## `Custom lightbox modal`
 ## `HTML5, SCSS and Javascript`
 
 ### `install npm`
