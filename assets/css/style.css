@@ -101,6 +101,10 @@ a:hover {
 }
 .card__image img {
   border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.card__image img:hover {
+  transform: scale(1.1);
 }
 .card__title {
   background-color: transparent;
