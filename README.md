@@ -1,5 +1,5 @@
 
-## RANDOM USER DISPLAY
+## SHOWING RANDOM USER IN CARD LIST
 
 ## `HTML5, SCSS and Javascript`
 
