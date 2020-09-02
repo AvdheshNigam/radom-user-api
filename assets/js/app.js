@@ -1,3 +1,4 @@
+const url = 'https://randomuser.me/api/?results=12&gender=male';
 let cardTemplate = '';
 
 function getCard(data) {
@@ -24,14 +25,14 @@ function createCardView(data) {
   mainContainer[0].innerHTML += cardTemplate;
 }
 
-fetch('https://randomuser.me/api/?results=12&gender=male')
-  .then(function (response) {
-    return response.json();
+fetch(url)
+  .then(function (res) {
+    return res.json();
   })
   .then(function (data) {
     console.log(data);
     createCardView(data);
   })
   .catch(function () {
-    console.log("Error something went wrong!");
+    console.log("Error something went wrong! Please try again later. ");
   });   
