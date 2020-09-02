@@ -1,24 +1,37 @@
-const navbar = document.querySelector('.js-custom-navbar');
-const menuIcon = document.querySelector('.js-menu-icon');
-const menuIconClose = document.querySelector('.js-menu-icon span');
-const modalImage = document.querySelector(".js-modal-image");
-const modalOpen = document.querySelector(".js-modal");
-const modalClose = document.querySelector(".js-close");
-const imgList = document.querySelectorAll(".js-img-thumb");
+let cardTemplate = '';
 
-menuIcon.addEventListener('click', e => {
-  e.preventDefault();
-  navbar.classList.toggle("open");
-  menuIconClose.classList.toggle("fa-times");
-});
+function getCard(data) {
+  cardTemplate += `  
+    <div class="col">
+      <div class="card">
+        <div class="card__image">
+          <img src="${data.picture.medium}">
+        </div>
+        <div class="card__title">
+          <h2>${data.name.first} <span>${data.name.last}</${data.name.last}></h2>
+        </div>
+        <div class="card__footer">     
+          <button>Call</button>
+        </div>
+      </div>
+    </div>`;
+  return;
+}
 
-Array.from(imgList).forEach(item => {
-  item.addEventListener("click", e => {
-    modalOpen.classList.add("open");
-    modalImage.src = e.target.src;
-  });
-});
+function createCardView(data) {
+  const mapArrHolder = data.results.map(getCard);
+  const mainContainer = document.getElementsByClassName('row');
+  mainContainer[0].innerHTML += cardTemplate;
+}
 
-modalClose.addEventListener("click", () => {
-  modalOpen.classList.remove("open");
-});
+fetch('https://randomuser.me/api/?results=12&gender=male')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    createCardView(data);
+  })
+  .catch(function () {
+    console.log("Error something went wrong!");
+  });   
