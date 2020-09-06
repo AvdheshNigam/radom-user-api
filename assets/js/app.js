@@ -29,7 +29,6 @@ const getData = async (gender) => {
     const url = `https://randomuser.me/api/?results=12&gender=${gender}`;
     const result = await fetch(url);
     const data = await result.json();
-    createCardView(data);
     return data;
 
   } catch(error) {
@@ -41,8 +40,10 @@ let gender;
 
 getData('male').then(data => {
   gender = data;
+  createCardView(data);
 });
 
 // getData('female').then(data => {
 //   gender = data;
+// createCardView(data);
 // });
