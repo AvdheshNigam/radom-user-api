@@ -36,8 +36,13 @@ async function getData(gender) {
     console.log('Error something went wrong! Please try again later.')
   }
 }
+
 let gender;
-getData('male').then(data => gender = data);
-// getData('female').then(data => gender = data);   
-// getData('male');
-// getData('female');
+
+getData('male').then(data => {
+  gender = data;
+});
+
+// getData('female').then(data => {
+//   gender = data;
+// });
