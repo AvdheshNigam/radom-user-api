@@ -24,7 +24,7 @@ function createCardView(data) {
   mainContainer[0].innerHTML += cardTemplate;
 }
 
-async function getData(gender) {
+const getData = async (gender) => {
   try {
     const url = `https://randomuser.me/api/?results=12&gender=${gender}`;
     const result = await fetch(url);
