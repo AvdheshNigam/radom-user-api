@@ -27,7 +27,6 @@ function createCardView(data) {
 
 const getData = async (gender, numberCards) => {
   try {
-
     const config = {
       url: `https://randomuser.me/api/`,
       numberCards: numberCards
@@ -35,14 +34,13 @@ const getData = async (gender, numberCards) => {
     const url = `${config.url}?results=${config.numberCards}&gender=${gender}`;
     const result = await fetch(url);
     const data = await result.json();
-    return data
-
+    return data;
   } catch(error) {
     console.log('Error something went wrong! Please try again later.')
   }
 }
 
 // You pass gender and number of cards
-getData('male', 12).then(data => {
+getData('male',12).then(data => {
   createCardView(data);
 });
