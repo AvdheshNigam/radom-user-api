@@ -1,3 +1,4 @@
+
 let cardTemplate = '';
 
 function getCard(data) {
@@ -11,7 +12,7 @@ function getCard(data) {
           <h2>${data.name.first} <span>${data.name.last}</${data.name.last}></h2>
         </div>
         <div class="card__footer">     
-          <button>Call</button>
+          <button class="card__footer__cta">Call</button>
         </div>
       </div>
     </div>`;
@@ -24,26 +25,25 @@ function createCardView(data) {
   mainContainer[0].innerHTML += cardTemplate;
 }
 
-const getData = async (gender) => {
+const getData = async (gender, numberCards) => {
   try {
-    const url = `https://randomuser.me/api/?results=12&gender=${gender}`;
-    const result = await fetch(url);
+
+    const config = {
+      url: `https://randomuser.me/api/`,
+      numberCards: numberCards
+    }
+    
+    const result = await fetch(`${config.url}?results=${config.numberCards}&gender=${gender}`);
     const data = await result.json();
-    return data;
+    return data
 
   } catch(error) {
     console.log('Error something went wrong! Please try again later.')
   }
 }
-
 let gender;
 
-getData('male').then(data => {
+getData('male', 12).then(data => {
   gender = data;
   createCardView(data);
 });
-
-// getData('female').then(data => {
-//   gender = data;
-// createCardView(data);
-// });

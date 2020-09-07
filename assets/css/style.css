@@ -6,9 +6,9 @@
 
 html,
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #ddd;
+  background-color: #eee;
   color: #333;
+  font-family: Tahoma, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -28,10 +28,6 @@ section {
 .flexGrid {
   display: flex;
   margin: auto 0 0;
-}
-
-.set {
-  height: 100vh;
 }
 
 .col {
@@ -60,25 +56,25 @@ section .card__wrapper .col {
   height: 100%;
   margin-bottom: 35px;
 }
-@media all and (max-width: 449px) {
+@media only screen and (max-width: 449px) {
   section .card__wrapper .col {
     flex: 1 1 100%;
     max-width: 100%;
   }
 }
-@media (min-width: 450px) and (max-width: 699px) {
+@media only screen and (min-width: 450px) and (max-width: 699px) {
   section .card__wrapper .col {
     flex: 1 1 50%;
     max-width: 50%;
   }
 }
-@media (min-width: 700px) and (max-width: 1023px) {
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
   section .card__wrapper .col {
     flex: 1 1 33.333%;
     max-width: 33.333%;
   }
 }
-@media all and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   section .card__wrapper .col {
     flex: 1 1 25%;
     max-width: 25%;
@@ -100,6 +96,7 @@ section .card__wrapper .col {
   display: block;
 }
 .card__image img {
+  width: 100%;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
@@ -114,13 +111,13 @@ section .card__wrapper .col {
 }
 .card__title h2 span {
   display: block;
-  font-size: 21px;
+  font-size: 28px;
 }
 .card__footer {
   padding: 7px 0px;
-  background-color: #e26d00;
 }
-.card__footer button {
+.card__footer__cta {
+  width: 100%;
   font-size: 17px;
   background-color: #ff8616;
   color: white;
@@ -129,12 +126,12 @@ section .card__wrapper .col {
   border-radius: 3px;
   cursor: pointer;
 }
-.card__footer button:hover {
+.card__footer__cta:hover {
   font-weight: 500;
   color: black;
   background-color: #ffa149;
 }
-.card__footer button:focus {
+.card__footer__cta:focus {
   outline: none;
 }
 
