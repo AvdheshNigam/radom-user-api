@@ -41,9 +41,8 @@ const getData = async (gender, numberCards) => {
     console.log('Error something went wrong! Please try again later.')
   }
 }
-let gender;
 
+// You pass gender and number of cards
 getData('male', 12).then(data => {
-  gender = data;
   createCardView(data);
 });
