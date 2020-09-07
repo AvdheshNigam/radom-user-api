@@ -20,8 +20,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 1200px;
+section {
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -38,13 +38,13 @@ a:hover {
   background: transparent;
 }
 
-.container-fluid {
+section {
   width: 100%;
   margin: 0 auto;
   padding-left: 0px;
   padding-right: 0px;
 }
-.container-fluid .row {
+section .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   width: auto;
@@ -54,32 +54,32 @@ a:hover {
   margin-left: 0px;
   margin-right: 0px;
 }
-.container-fluid .row .col {
+section .card__wrapper .col {
   transition: all 1s ease-out;
   padding: 15px 15px 15px 15px;
   height: 100%;
   margin-bottom: 35px;
 }
-@media all and (max-width: 600px) {
-  .container-fluid .row .col {
+@media all and (max-width: 449px) {
+  section .card__wrapper .col {
     flex: 1 1 100%;
     max-width: 100%;
   }
 }
-@media all and (min-width: 600px) {
-  .container-fluid .row .col {
+@media (min-width: 450px) and (max-width: 699px) {
+  section .card__wrapper .col {
     flex: 1 1 50%;
     max-width: 50%;
   }
 }
-@media all and (min-width: 768px) {
-  .container-fluid .row .col {
+@media (min-width: 700px) and (max-width: 1023px) {
+  section .card__wrapper .col {
     flex: 1 1 33.333%;
     max-width: 33.333%;
   }
 }
-@media all and (min-width: 991px) {
-  .container-fluid .row .col {
+@media all and (min-width: 1024px) {
+  section .card__wrapper .col {
     flex: 1 1 25%;
     max-width: 25%;
   }

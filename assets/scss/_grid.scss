@@ -1,5 +1,5 @@
-.container {
-  max-width: 1200px;
+section {
+  max-width: 1024px;
   margin: auto;
 }
 .flexGrid {
@@ -14,12 +14,12 @@
 }
 
 // Grid Layout
-.container-fluid {
+section {
   width: 100%;
   margin:0 auto;
   padding-left: 0px;
   padding-right: 0px;
-  .row {
+  .card__wrapper {
     display: flex;
     flex-wrap:wrap;
     width: auto;
@@ -33,19 +33,19 @@
       padding: 15px 15px 15px 15px;
       height: 100%;
       margin-bottom: 35px;
-      @media all and(max-width: 600px) {
+      @media all and(max-width: 449px) {
         flex:  1 1 100%;
         max-width: 100%;
       }
-      @media all and(min-width: 600px) {
+      @media (min-width: 450px) and (max-width: 699px){
         flex:  1 1 50%;
         max-width: 50%;
       }
-      @media all and(min-width: 768px) {
+      @media (min-width: 700px) and (max-width: 1023px){
         flex:  1 1 33.333%;
         max-width: 33.333%;
       }
-      @media all and(min-width: 991px) {
+      @media all and(min-width: 1024px) {
         flex:  1 1 25%;
         max-width: 25%;
       }

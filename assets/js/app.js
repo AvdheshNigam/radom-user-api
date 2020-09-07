@@ -20,7 +20,7 @@ function getCard(data) {
 
 function createCardView(data) {
   const mapArrHolder = data.results.map(getCard);
-  const mainContainer = document.getElementsByClassName('row');
+  const mainContainer = document.getElementsByClassName('card__wrapper');
   mainContainer[0].innerHTML += cardTemplate;
 }
 
