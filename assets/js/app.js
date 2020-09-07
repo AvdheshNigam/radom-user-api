@@ -9,7 +9,7 @@ function getCard(data) {
           <img src="${data.picture.medium}">
         </div>
         <div class="card__title">
-          <h2>${data.name.first} <span>${data.name.last}</${data.name.last}></h2>
+          <h2>${data.name.first} <span>${data.name.last}</span></h2>
         </div>
         <div class="card__footer">     
           <button class="card__footer__cta">Call</button>
