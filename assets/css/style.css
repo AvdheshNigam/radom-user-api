@@ -96,7 +96,7 @@ section .card__wrapper .col {
   display: block;
 }
 .card__image img {
-  width: 100%;
+  width: 50%;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }

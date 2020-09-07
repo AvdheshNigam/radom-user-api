@@ -32,8 +32,8 @@ const getData = async (gender, numberCards) => {
       url: `https://randomuser.me/api/`,
       numberCards: numberCards
     }
-    
-    const result = await fetch(`${config.url}?results=${config.numberCards}&gender=${gender}`);
+    const url = `${config.url}?results=${config.numberCards}&gender=${gender}`;
+    const result = await fetch(url);
     const data = await result.json();
     return data
 
