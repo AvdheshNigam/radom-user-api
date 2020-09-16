@@ -1,46 +1,49 @@
 
-let cardTemplate = '';
+const mainContainer = document.querySelector('.card__wrapper');
+let markup = '';
 
-function getCard(data) {
-  cardTemplate += `  
+const getUserCard = (user) => {
+  markup += `
     <div class="col">
       <div class="card">
         <div class="card__image">
-          <img src="${data.picture.medium}">
+          <img src="${user.picture.medium}">
         </div>
         <div class="card__title">
-          <h2>${data.name.first} <span>${data.name.last}</span></h2>
+          <h2>${user.name.first} <span>${user.name.last}</span></h2>
         </div>
         <div class="card__footer">     
-          <button class="card__footer__cta">Call</button>
+          <a class="card__footer__cta" href="tel:${user.cell}">Call</a>
         </div>
       </div>
-    </div>`;
-  return;
-}
-
-function createCardView(data) {
-  const mapArrHolder = data.results.map(getCard);
-  const mainContainer = document.getElementsByClassName('card__wrapper');
-  mainContainer[0].innerHTML += cardTemplate;
+    </div>
+  `;
+  mainContainer.innerHTML = markup;
 }
 
 const getData = async (gender, numberCards) => {
-  try {
-    const config = {
-      url: `https://randomuser.me/api/`,
-      numberCards: numberCards
-    }
-    const url = `${config.url}?results=${config.numberCards}&gender=${gender}`;
-    const result = await fetch(url);
-    const data = await result.json();
-    return data;
-  } catch(error) {
-    console.log('Error something went wrong! Please try again later.')
+
+  const config = {
+    url: `https://randomuser.me/api/`,
+    numberCards: numberCards,
+    gender: gender
   }
+  // Call API to get cards
+  fetch(`${config.url}?results=${config.numberCards}&gender=${gender}`)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(apiResponse) {
+    // Output API response to console to view.
+    console.log(apiResponse);
+    apiResponse.results.forEach(function(user){
+      getUserCard(user);
+    });
+  })
+  .catch((err) => {
+    console.log(`Something went wrong. Try again. ${err}`);
+  })
 }
 
 // You pass gender and number of cards
-getData('male',12).then(data => {
-  createCardView(data);
-});
+getData('male', 12);

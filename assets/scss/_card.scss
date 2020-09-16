@@ -4,19 +4,11 @@
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
   padding: $default-spacing;
   text-align: center;
-  transition: all .5s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-  }
   &__image {
     display: block;
     img{
       width: 50%;
       border-radius: 50%;
-      transition: all .5s ease-in-out;
-      &:hover{
-        transform: scale(1.1);
-      }
     }
   }
   &__title {
@@ -32,8 +24,7 @@
   &__footer {
     padding: 7px 0px;
     &__cta {
-      width: 100%;
-      font-size: 17px;
+      display: block;
       background-color: lighten($card-cta-background, 10%);
       color: lighten($card-cta-color, 100%);
       padding: 7px 30px;
