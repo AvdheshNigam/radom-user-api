@@ -1,5 +1,5 @@
 
-const mainContainer = document.querySelector('.card__wrapper');
+const cardWrapper = document.querySelector('.card__wrapper');
 let markup = '';
 
 const getUserCard = (user) => {
@@ -18,7 +18,7 @@ const getUserCard = (user) => {
       </div>
     </div>
   `;
-  mainContainer.innerHTML = markup;
+  cardWrapper.innerHTML = markup;
 }
 
 const getData = async (gender, numberCards) => {
