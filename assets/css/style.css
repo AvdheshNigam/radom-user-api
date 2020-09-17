@@ -32,7 +32,7 @@ section .card__wrapper {
 }
 section .card__wrapper .col {
   padding: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
   align-self: center;
 }
 @media only screen and (max-width: 449px) {
