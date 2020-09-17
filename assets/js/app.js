@@ -46,4 +46,4 @@ const getData = async (gender, numberCards) => {
 }
 
 // You pass gender and number of cards
-getData('male', 2);
+getData('male', 12);
