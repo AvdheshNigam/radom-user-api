@@ -1,35 +1,17 @@
-section {
-  max-width: 1024px;
-  margin: auto;
-}
-.flexGrid {
-  display: flex;
-  margin: auto 0 0;
-}
-.col {
-  background: transparent;
-}
-
 // Grid Layout
 section {
+  max-width: 1024px;
   width: 100%;
   margin:0 auto;
-  padding-left: 0px;
-  padding-right: 0px;
   .card__wrapper {
     display: flex;
     flex-wrap:wrap;
-    width: auto;
     justify-content: center;
-    align-self: center;
     box-sizing: border-box;
-    margin-left: 0px;
-    margin-right: 0px;
     .col{
-      transition: all 1s ease-out;
-      padding: 15px 15px 15px 15px;
-      height: 100%;
+      padding: 15px;
       margin-bottom: 35px;
+      align-self: center;
       @media only screen and(max-width: 449px) {
         flex:  1 1 100%;
         max-width: 100%;
