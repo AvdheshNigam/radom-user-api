@@ -1,14 +1,18 @@
 // Grid Layout
-section {
+
+//container
+section { 
   max-width: 1024px;
   width: 100%;
   margin:0 auto;
-  .card__wrapper {
+  background-color: red;
+  //row
+  .card__wrapper { 
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    box-sizing: border-box;
-    .col{
+    //col
+    .col{ 
       padding: 15px;
       margin-bottom: 35px;
       align-self: center;

@@ -24,12 +24,12 @@ section {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  background-color: red;
 }
 section .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-sizing: border-box;
 }
 section .card__wrapper .col {
   padding: 15px;
